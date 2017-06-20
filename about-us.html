@@ -1,18 +1,274 @@
 <!DOCTYPE html>
-<html lang="en">
+  <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-  <link rel="stylesheet" href="css/style.css" type="text/css">
-  <title>About Us</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>About Us</title>
+  </head>
 
-<body>
+  <body>
+   <!-- Header -->
+  <header>
+    <div class="container-fluid navbar-default" id="nav">
+      <div class="navbar-header">
+        <div class="text-center">
+        <a href="#"><img src="img/logo.Pwz" alt="Toa Taka" height="60"></a>
+        </div>
+      </div>
+      <ul class="nav navbar-nav navbar-right" id="navDetails">
+        <li><a href="#" data-toggle="modal" data-target="#myModal" class="links">Sign In</a></li>
+        <li><a href="gallery.html" class="links">Gallery<span class="sr-only">(current)</span></a></li>
+        <li><a href="#" class="links">Donate</a></li>
+      </ul>
+    </div>
 
-  <!--if you need scripts put them here-->
-</body>
+    <!-- Modal -->
+    <div id="myModal" class="container-fluid modal fade">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-md-4">
+              <form class="form-horizontal">
+                <h2 class="text-center modalHeaders">Sign Up</h2>
+                <fieldset>
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control inputs" id="inputName" placeholder="Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="inputEmail">Email</label>
+                    <input type="text" class="form-control inputs" id="inputEmail" placeholder="Email">
+                  </div>
+                  <div class="form-group">
+                    <label for="inputPassword">Password</label>
+                    <input type="password" class="form-control inputs" id="inputPassword" placeholder="Password">
+                  </div>
+                  <button type="submit" class="btn modalBtn">Sign Up</button>
+                </fieldset>
+              </form>
+            </div>
 
-</html>
+            <div class="col-sm-2"></div>
+
+            <div class="col-md-4">
+              <form class="form-horizontal">
+                <h2 class="text-center modalHeaders">Sign In</h2>
+                <fieldset>
+                  <div class="form-group">
+                    <label for="inputEmail">Email</label>
+                    <input type="text" class="form-control inputs" id="inputEmail" placeholder="Email">
+                  </div>
+                  <div class="form-group">
+                    <label for="inputPassword">Password</label>
+                    <input type="password" class="form-control inputs" id="inputPassword" placeholder="Password">
+                  </div>
+                  <button type="submit" class="btn modalBtn">Sign In</button>
+                </fieldset>
+              </form>
+            </div>
+            <div class="col-sm-1"></div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header --> 
+
+  <!-- About Us -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-4"></div>
+      <div class="col-sm-4">
+        <br>
+        <br>
+        <h1 class="text-center">ABOUT US</h1>
+        <br>
+        <h4 class="text-center">Overview</h4>
+      </div>
+      <div class="col-sm-4"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-3"></div>
+      <div class="col-sm-6">
+        <p>
+          Major cities and towns in the country have  a major litter problem, it is dumped in undesignated places.
+          This becomes an eyesore and even worse provides breeding grounds for pests and parasites that cause diseases. Out of this,
+          Toa Taka was birthed. It is a crowd-funding platform that allows users to donate to a site for cleaning.
+        </p>
+      </div>
+      <div class="col-sm-3"></div>
+    </div>
+
+    <div class="row">
+      <br>
+      <h3 class="text-center">KEY POINTS</h3>
+      <br>
+      <div class="col-sm-5"></div>
+      <div class="col-sm-2">
+        <div class="overview">
+          <ul class="list-with-checks fa-ul mb0">
+            <li><i class="fa-li fa fa-check"></i>Mobile-Friendly Campaigns</li>
+            <li><i class="fa-li fa fa-check"></i>No penalties for missing goal</li>
+            <li><i class="fa-li fa fa-check"></i>Toa taka Mobile App</li>
+          </ul>
+        </div>
+        <br>
+        <br>
+      </div>
+      <div class="col-sm-5"></div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="well">
+    <div class="row">
+    <div class="col-md-4">
+      <div class="text-center">
+        <a><i class="fa fa-trophy fa-4x" aria-hidden="true"></i></a>
+      </div>
+      <h3 class="text-center">#1 Fundraising Platform</h3>
+      <P>People have raised alot of money for enviromental causes.</P>
+    </div>
+    <div class="col-md-4">
+      <div class="text-center">
+        <a href=""><i class="fa fa-lock fa-4x" aria-hidden="true"></i></a>
+      </div>
+      <h3 class="text-center">Toa Taka Guarantee</h3>
+      <P>Your donation is safe. If anything is not right we will give you a <strong>full</strong> refund.</P>
+    </div>
+    <div class="col-md-4">
+      <div class="text-center">
+        <a href=""><i class="fa fa-clock-o fa-4x" aria-hidden="true"></i></a>
+      </div>
+      <h3 class="text-center">Timely Support</h3>
+      <p>Contact us with your questions and comments and we will reply in minutes..</p>
+    </div>
+    </div>
+    </div>
+  </div>
+  <!--/well-->
+  
+  <div class="container">
+   <div class="row" id="mapContainer">
+       <div id="map-outer" class="col-md-12">
+           <div id="address" class="col-md-4">
+             <h2>Our Location</h2>
+             <address>
+             <strong>Ngong Lane Plaza</strong><br>
+                First Floor,<br>
+                 Ngong Road<br>
+                 Nairobi<br>
+                 Kenya<br>
+                 <abbr>P:</abbr> 254 711 581 484<br><br>
+                 <div class="col-md-6">
+                    <a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i><br>
+                    <a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i><br>
+                    <a href="#"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a><br>
+                 </div>
+           </div>
+
+         <div id="map-container" class="col-md-8">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15955.167680788112!2d36.787326!3d-1.29965695!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x940b62a3c8efde4c!2sMoringa+School!5e0!3m2!1sen!2ske!4v1497863417684" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+         </div>
+       </div><!-- /map-outer -->
+
+   </div> <!-- /row -->
+<div class="page-header">
+  <h2 class="text-center">Contact Us</h2>
+</div>
+   <div class="row">
+   <form class="form-horizontal" name="commentform">
+     <div class="form-group">
+         <div class="col-md-4">
+             <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name"/>
+         </div>
+         <div class="col-md-4">
+             <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name"/>
+         </div>
+         <div class="col-md-4 input-group">
+         <span class="input-group-addon">@</span>
+             <input type="email" class="form-control" id="email" name="email" placeholder="Email Address"/>
+         </div>
+     </div>
+     <div class="form-group">
+         <div class="col-md-12">
+             <textarea rows="6" class="form-control" id="comments" name="comments" placeholder="Your question or comment here"></textarea>
+         </div>
+     </div>
+     <div class="form-group">
+         <div class="col-md-6">
+             <button type="submit" value="Submit" class="btn btn-warning pull-right">Send</button>
+         </div>
+     </div>
+  </form>
+  </div><!-- /row -->
+  </div><!-- /container -->
+
+  <!-- footer -->
+    <div class="container-fluid navbar-bottom" id="footer">
+      <div class="row">
+        <div class="col-sm-4">
+          <h1 class="text-center" id="footerHeader">Toa Taka</h1>
+          <br>
+          <div class="text-center">
+            <img src="images/logo.png">
+          </div>
+        </div>
+        <div class="col-sm-8">
+          <div class="row moreInfo">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+              <ul class="extra">
+                <li><a href="#" class="links">Home</a></li>
+                <li><a href="#" class="links">About Us</a></li>
+                <li><a href="#" class="links">Our Team</a></li>
+                <li><a href="#" class="links">Gallery</a></li>
+                <li><a href="#" class="links">Contact Us</a></li>
+                <li><a href="#" class="links">Donate</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4">
+              <ul class="extra">
+                <li><a href="#" class="links">Our Apps</a></li>
+                <li><a href="#" class="links">Careers</a></li>
+                <li><a href="#" class="links">FAQ</a></li>
+                <li><a href="#" class="links">Terms and Conditions</a></li>
+                <li><a href="#" class="links">Our Partners</a></li>
+                <li><a href="#" class="links">Privacy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <br>
+        <br>
+        <p class="text-center" id="copy">&#169 2017 Toa Taka. All Rights Reserved.</p>
+      </div>
+    </div>
+    <!-- footer -->
+   <!--if you need scripts put them here-->
+   <script src="js/jquery-3.2.1.js"></script>
+   <script src="js/bootstrap.js"></script>
+   <script src="js/scripts.js"></script>
+  </body>
+  </html>
+
+  </div>
+
+  </body>
+
+  </html>

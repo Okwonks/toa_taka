@@ -7,10 +7,332 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Toa-Taka</title>
+
 </head>
 
 <body>
+  <!-- Header -->
+  <header>
+    <div class="container-fluid navbar-default" id="nav">
+      <div class="navbar-header">
+        <div class="text-center">
+          <a href="#"><img src="img/logo.Pwz" alt="Toa Taka" height="60"></a>
+        </div>
+      </div>
+      <ul class="nav navbar-nav navbar-right" id="navDetails">
+        <li><a href="#" data-toggle="modal" data-target="#myModal" class="links">Sign In</a></li>
+        <li><a href="gallery.html" class="links">Gallery<span class="sr-only">(current)</span></a></li>
+        <li><a href="#" class="links">Donate</a></li>
+      </ul>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="container-fluid modal fade">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-sm-1"></div>
+              <div class="col-md-4">
+                <form class="form-horizontal">
+                  <h2 class="text-center modalHeaders">Sign Up</h2>
+                  <fieldset>
+                    <div class="form-group">
+                      <label for="name">Name</label>
+                      <input type="text" class="form-control inputs" id="inputName" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                      <label for="inputEmail">Email</label>
+                      <input type="text" class="form-control inputs" id="inputEmail" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                      <label for="inputPassword">Password</label>
+                      <input type="password" class="form-control inputs" id="inputPassword" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn modalBtn">Sign Up</button>
+                  </fieldset>
+                </form>
+              </div>
+
+              <div class="col-sm-2"></div>
+
+              <div class="col-md-4">
+                <form class="form-horizontal">
+                  <h2 class="text-center modalHeaders">Sign In</h2>
+                  <fieldset>
+                    <div class="form-group">
+                      <label for="inputEmail">Email</label>
+                      <input type="text" class="form-control inputs" id="inputEmail" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                      <label for="inputPassword">Password</label>
+                      <input type="password" class="form-control inputs" id="inputPassword" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn modalBtn">Sign In</button>
+                  </fieldset>
+                </form>
+              </div>
+              <div class="col-sm-1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header -->
+
+
+  <div class="page-header">
+    <h1 class="text-center">TOA TAKA</h1>
+    <h4 class="text-center">CLEAN COUNTY</h4>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <img src="images/nairobi.jpg" class="img-responsive" style="width: 100%; height: 80%;">
+    </div>
+  </div>
+  <br><br><br>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-8">
+        <h3 class="text-center">SOME OF OUR PROJECTS</h3>
+        <div class="row">
+
+          <div class="col-md-4">
+            <div class="thumbnail" style="max-width: 100%; height: 100%;">
+              <img src="img/index-carousel/clean-water.jpg" alt="Clean-water" class="img-responsive">
+              <div class="caption">
+                <h3 class="text-center">Cleansing Project</h3>
+                <h4 class="text-center"><span class="label label-success">Complete</span></h4>
+                <p>A project to clean the environment around water points.</p>
+                <p>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <a href="#" class="btn btn-primary btn-xs" role="button" style="width: 100%;">View</a>
+                    </div>
+                    <div class="col-sm-6">
+                      <a href="#" class="btn btn-xs btn-default" role="button" style="width: 100%;">Donate</a>
+                    </div>
+                  </div>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="thumbnail" style="max-width: 100%; height: 100%;">
+              <img src="img/index-carousel/child-cleanup.jpg" alt="child-cleanup" class="img-responsive">
+              <div class="caption">
+                <h3 class="text-center">Next Generation</h3>
+                <h4 class="text-center"><span class="label label-warning">In-progress</span></h4>
+                <p>It's about time we involved the next generation. The future is green.</p>
+                <p>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <a href="#" class="btn btn-primary btn-xs" role="button" style="width: 100%;">View</a>
+                    </div>
+                    <div class="col-sm-6">
+                      <a href="#" class="btn btn-xs btn-default" role="button" style="width: 100%;">Donate</a>
+                    </div>
+                  </div>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4" style="max-width: 100%; height: 100%;">
+            <div class="thumbnail">
+              <img src="img/index-carousel/president.jpg" alt="president-Kenyatta" class="img-responsive">
+              <div class="caption">
+                <h3 class="text-center">Bring in the Leaders</h3>
+                <h4 class="text-center"><span class="label label-success">Complete</span></h4>
+                <p>Best way to lead is to show and example. The President did just that.</p>
+                <p>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <a href="#" class="btn btn-primary btn-xs" role="button" style="width: 100%;">View</a>
+                    </div>
+                    <div class="col-sm-6">
+                      <a href="#" class="btn btn-xs btn-default" role="button" style="width: 100%;">Donate</a>
+                    </div>
+                  </div>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end first row-->
+
+        <div class="row">
+
+          <div class="col-md-4">
+            <div class="thumbnail" style="width: 100%; height: 100%;">
+              <img src="img/index-carousel/nairobi.jpg" alt="view-of-Nairobi" class="img-responsive">
+              <div class="caption">
+                <h3 class="text-center">Park Clean-Up</h3>
+                <h4 class="text-center"><span class="label label-warning">In-progress</span></h4>
+                <p>We know how important recration is, clean-up the parks!.</p>
+                <p>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <a href="#" class="btn btn-primary btn-xs" role="button" style="width: 100%;">View</a>
+                    </div>
+                    <div class="col-sm-6">
+                      <a href="#" class="btn btn-xs btn-default" role="button" style="width: 100%;">Donate</a>
+                    </div>
+                  </div>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="thumbnail" style="width: 100%; height: 100%;">
+              <img src="img/index-carousel/garbage-truck.jpg" alt="Garbage-truck" class="img-responsive">
+              <div class="caption">
+                <h3 class="text-center">Garbage Disposal</h3>
+                <h4 class="text-center"><span class="label label-success">Complete</span></h4>
+                <p>Finding new ways to "toa-taka"(take out the trash).</p>
+                <p>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <a href="#" class="btn btn-primary btn-xs" role="button" style="width: 100%;">View</a>
+                    </div>
+                    <div class="col-sm-6">
+                      <a href="#" class="btn btn-xs btn-default" role="button" style="width: 100%;">Donate</a>
+                    </div>
+                  </div>
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-4">
+            <div class="thumbnail" style="width: 100%; height: 100%;">
+              <img src="img/index-carousel/dandora.jpg" alt="dandora-dump-site" class="img-responsive">
+              <div class="caption">
+                <h3 class="text-center">No Dumping</h3>
+                <h4 class="text-center"><span class="label label-danger">In-progress</span></h4>
+                <p>Join us in our efforts to get rid of illegal dump sites in the city.</p>
+                <p>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <a href="#" class="btn btn-primary btn-xs" role="button" style="width: 100%;">View</a>
+                    </div>
+                    <div class="col-sm-6">
+                      <a href="#" class="btn btn-xs btn-default" role="button" style="width: 100%;">Donate</a>
+                    </div>
+                  </div>
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--end of second row-->
+      </div>
+      <!--end of projects col-md-8-->
+
+      <div class="col-md-4">
+        <div class="panel panel-warning">
+          <div class="panel-heading">
+            <h3 class="panel-title text-center"><strong>BECOME A DONOR</strong></h3>
+          </div>
+          <div class="panel-body">
+            <p class="text-warning text-center"><em>Join our donors:</em></p>
+            <ul class="list-group">
+              <li class="list-group-item">Kanye West has donated Khs. 10,000 - 5 minutes ago</li>
+              <li class="list-group-item">Moringa School has donated Khs. 24,000 - 10 minutes ago</li>
+              <li class="list-group-item">Safaricom Kenya Ltd has donated Khs. 100,000 - 14 minutes ago</li>
+              <li class="list-group-item">Uhuru Kenyatta has donated Khs. 50,000 - 18 minutes ago</li>
+              <li class="list-group-item">Raila Odinga has donated Khs. 50,000 - 18 minutes ago</li>
+              <li class="list-group-item">Gucci Mane has donated Khs. 50,000 - 20 minutes ago</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="panel panel-success">
+          <div class="panel-heading">
+            <h3 class="panel-title">Toa Taka in the News:</h3>
+          </div>
+          <div class="panel-body">
+            <h3>Toa Taka Launches School Program</h3>
+            <p>The future is bright when we can include the next generation in cleaning up the country. Let's face it environmental work is not only for the current generation but also for those who will follow. A cleaner today for a better tomorrow is
+              one of our moto's here at Toa Taka. The launch of the Toa Taka School Program proved a success and allowed us as Toa Taka to impact the lives of children and also impact the older generation.</p>
+            <a href="#" class="btn btn-primary">read article</a>
+            <h3>Toa Taka Cleans Uhuru Park</h3>
+            <p>As one of our major projets. We as Toa Taka, embarked on a journey to clean one of our parks. Uhuru park was the goal of the day. We pulled together all our recources and with aid from donors we were able to clean up our city based park at
+              the heart of Nairobi. We were joined by members of the Environment Society in Kenya. It was a delight to be able to work intandem with environment enthusist.</p>
+            <a href="#" class="btn btn-primary">read article</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <!--end of main row-->
+  </div>
+  </div>
+  <!--end of container-->
+  </div>
+
+  <!-- footer -->
+  <div class="container-fluid navbar-bottom" id="footer">
+    <div class="row">
+      <div class="col-sm-4">
+        <h1 class="text-center" id="footerHeader">Toa Taka</h1>
+        <br>
+        <div class="text-center">
+          <img src="images/logo.png">
+        </div>
+      </div>
+      <div class="col-sm-8">
+        <div class="row moreInfo">
+          <div class="col-sm-4"></div>
+          <div class="col-sm-4">
+            <ul class="extra">
+              <li><a href="#" class="links">Home</a></li>
+              <li><a href="about-us.html" class="links">About Us</a></li>
+              <li><a href="team.html" class="links">Our Team</a></li>
+              <li><a href="gallery.html" class="links">Gallery</a></li>
+              <li><a href="about-us.html" class="links">Contact Us</a></li>
+              <li><a href="#" class="links">Donate</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <ul class="extra">
+              <li><a href="#" class="links">Our Apps</a></li>
+              <li><a href="#" class="links">Careers</a></li>
+              <li><a href="#" class="links">FAQ</a></li>
+              <li><a href="#" class="links">Terms and Conditions</a></li>
+              <li><a href="#" class="links">Our Partners</a></li>
+              <li><a href="#" class="links">Privacy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <br>
+      <br>
+      <p class="text-center" id="copy">&#169 2017 Toa Taka. All Rights Reserved.</p>
+    </div>
+  </div>
+  <!-- footer -->
+
+
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="css/variables.scss"></script>
+
 
   <!--if you need scripts put them here-->
 </body>

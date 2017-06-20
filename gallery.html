@@ -5,14 +5,227 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lora|Open+Sans" rel="stylesheet">
+  <!--Bootstrap-->
   <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+  <!--Main CSS-->
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <title>Gallery</title>
 </head>
 
 <body>
+  <!-- Header -->
+  <header>
+    <div class="container-fluid navbar-default" id="nav">
 
-  <!--if you need scripts put them here-->
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a href="index.html"><img src="img/logo.Pwz" alt="Toa Taka"></a>
+
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" data-toggle="modal" data-target="#myModal">Sign Up/Sign In</a></li>
+            <li><a href="#">Gallery<span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Donate</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Modal -->
+      <div id="myModal" class="container-fluid modal fade">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-md-4">
+                  <form class="form-horizontal">
+                    <h2 class="text-center modalHeaders">Sign Up</h2>
+                    <fieldset>
+                      <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control inputs" id="inputName" placeholder="Name">
+                      </div>
+                      <div class="form-group">
+                        <label for="inputEmail">Email</label>
+                        <input type="text" class="form-control inputs" id="inputEmail" placeholder="Email">
+                      </div>
+                      <div class="form-group">
+                        <label for="inputPassword">Password</label>
+                        <input type="password" class="form-control inputs" id="inputPassword" placeholder="Password">
+                      </div>
+                      <button type="submit" class="btn modalBtn">Sign Up</button>
+                    </fieldset>
+                  </form>
+                </div>
+
+                <div class="col-sm-2"></div>
+
+                <div class="col-md-4">
+                  <form class="form-horizontal">
+                    <h2 class="text-center modalHeaders">Sign In</h2>
+                    <fieldset>
+                      <div class="form-group">
+                        <label for="inputEmail">Email</label>
+                        <input type="text" class="form-control inputs" id="inputEmail" placeholder="Email">
+                      </div>
+                      <div class="form-group">
+                        <label for="inputPassword">Password</label>
+                        <input type="password" class="form-control inputs" id="inputPassword" placeholder="Password">
+                      </div>
+                      <button type="submit" class="btn modalBtn">Sign In</button>
+                    </fieldset>
+                  </form>
+                </div>
+                <div class="col-sm-1"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- gallery -->
+  <div class="container" id="gallery">
+    <div class="row">
+
+      <div class="container" id="galleryContainer">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="thumbnail">
+              <img src="images/streets.jpg" id="imageGallery" alt="My Image">
+              <div class="caption">
+                <p class="text-center">Cleaning Takataka Avenue on 31st April 2016</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="thumbnail">
+              <img src="images/streets2.jpg" id="imageGallery" alt="My Image">
+              <div class="caption">
+                <p class="text-center">Cleaning Takataka Avenue on 31st April 2016</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="thumbnail">
+              <img src="images/streets3.jpg" id="imageGallery" alt="My Image">
+              <div class="caption">
+                <p class="text-center">Cleaning Takataka Avenue on 31st April 2016</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="thumbnail">
+              <img src="images/streets.jpg" id="imageGallery" alt="My Image">
+              <div class="caption">
+                <p class="text-center">Cleaning Safi Road on 29th February 2017</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="thumbnail">
+              <img src="images/streets2.jpg" id="imageGallery" alt="My Image">
+              <div class="caption">
+                <p class="text-center">Cleaning Safi Road on 29th February 2017</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="thumbnail">
+              <img src="images/streets3.jpg" id="imageGallery" alt="My Image">
+              <div class="caption">
+                <p class="text-center">Cleaning Safi Road on 29th February 2017</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="thumbnail">
+              <img src="images/streets.jpg" id="imageGallery" alt="My Image">
+              <div class="caption">
+                <p class="text-center">Cleaning Chafu Street on 31st June 2016</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="thumbnail">
+              <img src="images/streets2.jpg" id="imageGallery" alt="My Image">
+              <div class="caption">
+                <p class="text-center">Cleaning Chafu Street on 31st June 2016</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="thumbnail">
+              <img src="images/streets3.jpg" id="imageGallery" alt="My Image">
+              <div class="caption">
+                <p class="text-center">Cleaning Chafu Street on 31st June 2016</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- gallery -->
+
+      <!-- footer -->
+      <div class="container-fluid navbar-bottom" id="footer">
+        <div class="row">
+          <div class="col-sm-4">
+            <h1 class="text-center" id="footerHeader">Toa Taka</h1>
+            <br>
+            <div class="text-center">
+              <img src="images/logo.png">
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <div class="row moreInfo">
+              <div class="col-sm-4"></div>
+              <div class="col-sm-4">
+                <ul class="extra">
+                  <li><a href="index.html" class="links">Home</a></li>
+                  <li><a href="about-us.html" class="links">About Us</a></li>
+                  <li><a href="team.html" class="links">Our Team</a></li>
+                  <li><a href="gallery.html" class="links">Gallery</a></li>
+                  <li><a href="about-us.html" class="links">Contact Us</a></li>
+                  <li><a href="#" class="links">Donate</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-4">
+                <ul class="extra">
+                  <li><a href="#" class="links">Our Apps</a></li>
+                  <li><a href="#" class="links">Careers</a></li>
+                  <li><a href="#" class="links">FAQ</a></li>
+                  <li><a href="#" class="links">Terms and Conditions</a></li>
+                  <li><a href="#" class="links">Our Partners</a></li>
+                  <li><a href="#" class="links">Privacy</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <br>
+          <br>
+          <p class="text-center" id="copy">&#169 2017 Toa Taka. All Rights Reserved.</p>
+        </div>
+      </div>
+      <!-- footer -->
+<!--if you need scripts put them here-->
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+
 </body>
 
 </html>
