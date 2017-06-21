@@ -28,21 +28,23 @@
 </head>
 
 <body>
+  <!-- Header -->
   <header>
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a href="index.html"><img src="img/logo.Pwz" alt="Toa Taka"></a>
+    <div class="container-fluid navbar-default" id="nav">
+      <div class="navbar-header">
+        <div class="text-center">
+          <a href="index.html"><img src="img/logo.Pwz" alt="Toa Taka" height="60"></a>
         </div>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#" data-toggle="modal" data-target="#myModal">Sign Up/Sign In</a></li>
-          <li><a href="gallery.html">Gallery<span class="sr-only">(current)</span></a></li>
-          <li><a href="donate.html">Donate</a></li>
-        </ul>
       </div>
-    </nav>
+      <ul class="nav navbar-nav navbar-right" id="navDetails">
+        <li><a href="#" data-toggle="modal" data-target="#myModal" class="links">Sign In</a></li>
+        <li><a href="gallery.html" class="links">Gallery<span class="sr-only">(current)</span></a></li>
+        <li><a href="#" class="links">Donate</a></li>
+      </ul>
+    </div>
+
     <!-- Modal -->
-    <div id="myModal" class="modal fade">
+    <div id="myModal" class="container-fluid modal fade">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
@@ -50,169 +52,163 @@
           </div>
           <div class="modal-body">
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-sm-1"></div>
+              <div class="col-md-4">
                 <form class="form-horizontal">
-                  <h2>Sign Up</h2>
+                  <h2 class="text-center modalHeaders">Sign Up</h2>
                   <fieldset>
                     <div class="form-group">
-                      <label for="name" class="col-lg-2 control-label">Full Name</label>
-                      <div class="col-lg-10">
-                        <input type="text" class="form-control" id="inputName" placeholder="Name">
-                      </div>
+                      <label for="name">Name</label>
+                      <input type="text" class="form-control inputs" id="inputName" placeholder="Name">
                     </div>
                     <div class="form-group">
-                      <label for="inputEmail" class="col-lg-2 control-label">Email</label>
-                      <div class="col-lg-10">
-                        <input type="text" class="form-control" id="inputEmail" placeholder="Email">
-                      </div>
+                      <label for="inputEmail">Email</label>
+                      <input type="text" class="form-control inputs" id="inputEmail" placeholder="Email">
                     </div>
                     <div class="form-group">
-                      <label for="inputPassword" class="col-lg-2 control-label">Password</label>
-                      <div class="col-lg-10">
-                        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-                      </div>
-                      <div class="form-group">
-                        <div class="col-lg-10 col-lg-offset-2">
-                          <button type="submit" class="btn btn-primary">Sign Up</button>
-                          <button type="reset" class="btn btn-default">Cancel</button>
-                        </div>
-                      </div>
+                      <label for="inputPassword">Password</label>
+                      <input type="password" class="form-control inputs" id="inputPassword" placeholder="Password">
                     </div>
+                    <button type="submit" class="btn modalBtn">Sign Up</button>
                   </fieldset>
                 </form>
               </div>
 
-              <div class="col-md-6">
+              <div class="col-sm-2"></div>
+
+              <div class="col-md-4">
                 <form class="form-horizontal">
-                  <h2>Sign In</h2>
+                  <h2 class="text-center modalHeaders">Sign In</h2>
                   <fieldset>
                     <div class="form-group">
-                      <label for="inputEmail" class="col-lg-2 control-label">Email</label>
-                      <div class="col-lg-10">
-                        <input type="text" class="form-control" id="inputEmail" placeholder="Email">
-                      </div>
+                      <label for="inputEmail">Email</label>
+                      <input type="text" class="form-control inputs" id="inputEmail" placeholder="Email">
                     </div>
                     <div class="form-group">
-                      <label for="inputPassword" class="col-lg-2 control-label">Password</label>
-                      <div class="col-lg-10">
-                        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-                      </div>
-                      <div class="form-group">
-                        <div class="col-lg-10 col-lg-offset-2">
-                          <button type="submit" class="btn btn-primary">Sign In</button>
-                          <button type="reset" class="btn btn-default">Cancel</button>
-                        </div>
-                      </div>
+                      <label for="inputPassword">Password</label>
+                      <input type="password" class="form-control inputs" id="inputPassword" placeholder="Password">
                     </div>
+                    <button type="submit" class="btn modalBtn">Sign In</button>
                   </fieldset>
                 </form>
               </div>
+              <div class="col-sm-1"></div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </header>
+  <!-- Header -->
 
-  <div class="container">
+  <div class="container" style="padding-top: 50px;">
     <div class="row">
-      <div class="col-sm-6" align="center">
-        <h3>Morris Waracci</h3>
-        <img class="img-circle" src="img/images/coreytaylor.png" height="200" width="200" style="margin left:auto">
-        <br><br><br>
-        <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        <br>
+    	<h1 class="text-center">Our Team</h1>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+      	<div class="thumbnail">
+          <img src="img/corey.jpg" alt="My Image">
+          <div class="caption">
+            <h3 class="text-center">Morris Waracci</h3>
+            <p>Morris Waracci is a front-End Developer and student at Moringa School. He believes that desires should be ruled by reason and it's all about how you connect with the people you are trying to help and understand. He holds a bachelor in Industrial Chemistry with a Managagement from Kenyatta University.</p>
+          </div>
+        </div>
       </div>
-      <div class="col-sm-6" align="center">
-        <h3>Tessa McDuffie</h3>
-        <img class="img-circle" src="img/images/halle.png" height="200" width="200" style="margin right:auto">
-        <br><br><br>
-        <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        <br>
+      <div class="col-sm-4">
+      	<div class="thumbnail">
+          <img src="img/halle.jpg" alt="My Image">
+          <div class="caption">
+            <h3 class="text-center">Tessa McDuffie</h3>
+            <p>Tessa McDuffie is one of the six founding team members of the Toa Taka team. She has a strong interest in environmental issues which led her to the idea of Clean County, a site that helps remove waste and debris by employing local community members. She is currently studying programming at Moringa School in Nairobi, Kenya. She spends most of her time reading and eating in local kibandaskis.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+      	<div class="thumbnail">
+          <img src="img/james.jpg" alt="My Image">
+          <div class="caption">
+            <h3 class="text-center">Gitu Mbugua</h3>
+            <p>Gitu Mbugua is a 19 year-old student living in Nairobi, Kenya. He grew up in Nairobi where he currently lives today. He completed high school in 2016 and is currrently in a developing school learning how to code. He hopes to join Anonymous one day!</p>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="row">
-      <div class="col-sm-6" align="center">
-        <h3>Gitu Mbugua </h3>
-        <img class="img-circle" src="img/images/jeremy.png" height="200" width="200" style="margin left:auto">
-        <br><br><br>
-        <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        <br>
+      <div class="col-sm-4">
+      	<div class="thumbnail">
+          <img src="img/kanye.jpg" alt="My Image">
+          <div class="caption">
+            <h3 class="text-center">Leroy Omondi</h3>
+            <p>Leroy Omondi is one of the founding members of Toa Taka and currently serves as the Toa Taka tech team leader. He is 22 years old and a student at Moringa School where he studies computer programming. He grew up in Nairobi and spends most of his time studying new programming languages and watching the sunset.</p>
+          </div>
+        </div>
       </div>
-      <div class="col-sm-6" align="center">
-        <h3>Leroy Omondi </h3>
-        <img class="img-circle" src="img/images/kanye.png" height="200" width="200" style="margin right:auto">
-        <br><br><br>
-        <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        <br>
+      <div class="col-sm-4">
+      	<div class="thumbnail">
+          <img src="img/kendrick.jpg" alt="My Image">
+          <div class="caption">
+            <h3 class="text-center">David Kihara</h3>
+            <p>David Kahara is one of the founding members of the Toa Taka organization. He is an avid campaigner for environmental gains and has been instrumental in setting up mass clean up exercises in and around the city of Nairobi. He was among those that lobbied the government to introduce legislation banning plastic bags ... Biophillic to bone and ready to change the world!!</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+      	<div class="thumbnail">
+          <img src="img/cole.jpg" alt="My Image">
+          <div class="caption">
+            <h3 class="text-center">Albert Oketch</h3>
+            <p>Albert Oketch is one of the six founding team members of the Toa Taka team. He joined the team after discovering that there were people with similar interests in the environment. He doesn't talk much and is slowly becoming a git master B-). To infinity and beyond!</p>
+          </div>
+        </div>
       </div>
     </div>
+   </div>
 
-
+  <!-- footer -->
+  <div class="container-fluid navbar-bottom" id="footer">
     <div class="row">
-      <div class="col-sm-6" align="center">
-        <h3>David Kihara</h3>
-        <img class="img-circle" src="img/images/kenlamar.png" height="200" width="200" style="margin left:auto">
-        <br><br><br>
-        <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      <div class="col-sm-4">
+        <h1 class="text-center" id="footerHeader">Toa Taka</h1>
         <br>
+        <div class="text-center">
+          <img src="images/logo.png">
+        </div>
       </div>
-      <div class="col-sm-6" align="center">
-        <h3>Albert Oketch</h3>
-        <img class="img-circle" src="img/images/t.cruz.png" height="200" width="200" style="margin right:auto">
-        <br><br><br>
-        <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        <br>
+      <div class="col-sm-8">
+        <div class="row moreInfo">
+          <div class="col-sm-4"></div>
+          <div class="col-sm-4">
+            <ul class="extra">
+              <li><a href="#" class="links">Home</a></li>
+              <li><a href="about-us.html" class="links">About Us</a></li>
+              <li><a href="team.html" class="links">Our Team</a></li>
+              <li><a href="gallery.html" class="links">Gallery</a></li>
+              <li><a href="about-us.html" class="links">Contact Us</a></li>
+              <li><a href="#" class="links">Donate</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <ul class="extra">
+              <li><a href="#" class="links">Our Apps</a></li>
+              <li><a href="#" class="links">Careers</a></li>
+              <li><a href="#" class="links">FAQ</a></li>
+              <li><a href="#" class="links">Terms and Conditions</a></li>
+              <li><a href="#" class="links">Our Partners</a></li>
+              <li><a href="#" class="links">Privacy</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
+    </div>
+    <div class="row">
+      <br>
+      <br>
+      <p class="text-center" id="copy">&#169 2017 Toa Taka. All Rights Reserved.</p>
     </div>
   </div>
   <!-- footer -->
-   <div class="container-fluid" id="footer">
-     <div class="row">
-       <div class="col-sm-4">
-         <h1 class="text-center" id="footerHeader">Toa Taka</h1>
-         <br>
-         <div class="text-center">
-           <img src="images/logo.png">
-         </div>
-       </div>
-       <div class="col-sm-8">
-         <div class="row moreInfo">
-           <div class="col-sm-4"></div>
-           <div class="col-sm-4">
-             <ul class="extra">
-               <li><a href="index.html" class="links">Home</a></li>
-               <li><a href="about-us.html" class="links">About Us</a></li>
-               <li><a href="team.html" class="links">Our Team</a></li>
-               <li><a href="gallery.html" class="links">Gallery</a></li>
-               <li><a href="about-us.html" class="links">Contact Us</a></li>
-               <li><a href="donate.html" class="links">Donate</a></li>
-             </ul>
-           </div>
-           <div class="col-sm-4">
-             <ul class="extra">
-               <li><a href="#" class="links">Our Apps</a></li>
-               <li><a href="#" class="links">Careers</a></li>
-               <li><a href="#" class="links">FAQ</a></li>
-               <li><a href="#" class="links">Terms and Conditions</a></li>
-               <li><a href="#" class="links">Our Partners</a></li>
-               <li><a href="#" class="links">Privacy</a></li>
-             </ul>
-           </div>
-         </div>
-       </div>
-     </div>
-     <div class="row">
-       <br>
-       <br>
-       <p class="text-center" id="copy">&#169 2017 Toa Taka. All Rights Reserved.</p>
-     </div>
-   </div>
-
-
-
-
 
 </body>
 
