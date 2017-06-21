@@ -10,6 +10,129 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>About Us</title>
+    <style>
+    /*About section CSS*/
+
+    body {
+      background-color: #CCC
+    }
+
+    #map-outer {
+      height: 500px;
+      padding: 20px;
+      border: 2px solid #CCC;
+      margin-bottom: 20px;
+      background-color: #FFF
+    }
+
+    #map-container {
+      height: 500px
+    }
+
+    @media all and (max-width: 991px) {
+      #map-outer {
+        height: 500px
+        float: right;
+      }
+    }
+    .well-sm {
+
+      margin-top: -4em;
+      text-align: center;
+      margin-left: 10em;
+      margin-right: 10em;
+      border-style: outset;
+
+    }
+    .overview {
+      margin-left: 15em;
+      margin-right: 15em;
+      margin-bottom: 5em;
+    }
+
+
+
+    .jumbotron {
+      font-style: normal;
+      font-family: 'Open Sans', sans-serif;
+      text-align: center;
+    }
+
+    .img-circle{
+      border-radius: 50%;
+    }
+    /* General */
+    body {
+    	font-family: 'Open Sans', sans-serif;
+    }
+
+    nav {
+    	font-family: 'Lora', serif;
+    }
+
+    h1, h2, h3 {
+    	color: #1a9b1c;
+    	font-family: 'Lora', serif;
+    }
+
+    button {
+    	color: #e85709;
+    }
+    /* General */
+
+    /* Navbar */
+    /* Navbar */
+
+    /* Footer */
+    #footer {
+    	background-color: #383737;
+    	margin-top: 50px;
+    	margin-bottom: 0px;
+    	padding-bottom: 25px;
+    }
+
+    #footerHeader {
+    	color: #dbdbdb;
+    }
+
+    .moreInfo {
+    	color: #e85709;
+    	padding-top: 50px;
+    }
+
+    .extra {
+    	list-style-type: none;
+    	float: left;
+    	color: #e85709;
+    	text-decoration: none;
+    }
+
+    .links {
+        color: #e85709;
+        text-decoration: none;
+        font-size: 1.2em;
+    }
+
+    .links:visited {
+        text-decoration: none;
+    }
+
+    .links:hover {
+        color: #1a9b1c;
+        text-decoration: none;
+    }
+
+    .links:active {
+        color: #1a9b1c;
+        text-decoration: none;
+    }
+
+    #copy {
+    	color: #dbdbdb;
+    }
+    /* Footer */
+
+    </style>
   </head>
 
   <body>
@@ -24,7 +147,7 @@
       <ul class="nav navbar-nav navbar-right" id="navDetails">
         <li><a href="#" data-toggle="modal" data-target="#myModal" class="links">Sign In</a></li>
         <li><a href="gallery.html" class="links">Gallery<span class="sr-only">(current)</span></a></li>
-        <li><a href="#" class="links">Donate</a></li>
+        <li><a href="donate.html" class="links">Donate</a></li>
       </ul>
     </div>
 
@@ -84,7 +207,7 @@
       </div>
     </div>
   </header>
-  <!-- Header --> 
+  <!-- Header -->
 
   <!-- About Us -->
   <div class="container-fluid">
@@ -160,7 +283,7 @@
     </div>
   </div>
   <!--/well-->
-  
+
   <div class="container">
    <div class="row" id="mapContainer">
        <div id="map-outer" class="col-md-12">
@@ -232,12 +355,12 @@
             <div class="col-sm-4"></div>
             <div class="col-sm-4">
               <ul class="extra">
-                <li><a href="#" class="links">Home</a></li>
-                <li><a href="#" class="links">About Us</a></li>
-                <li><a href="#" class="links">Our Team</a></li>
-                <li><a href="#" class="links">Gallery</a></li>
-                <li><a href="#" class="links">Contact Us</a></li>
-                <li><a href="#" class="links">Donate</a></li>
+                <li><a href="index.html" class="links">Home</a></li>
+                <li><a href="about-us.html" class="links">About Us</a></li>
+                <li><a href="team.html" class="links">Our Team</a></li>
+                <li><a href="gallery.html" class="links">Gallery</a></li>
+                <li><a href="about-us.html" class="links">Contact Us</a></li>
+                <li><a href="donate.html" class="links">Donate</a></li>
               </ul>
             </div>
             <div class="col-sm-4">
