@@ -12,88 +12,100 @@
   <!--Main CSS-->
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <title>Gallery</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="img/icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="img/icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="img/icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="img/icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+<link rel="manifest" href="img/icons/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="img/icons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
   <!-- Header -->
   <header>
     <div class="container-fluid navbar-default" id="nav">
-
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a href="index.html"><img src="img/logo.Pwz" alt="Toa Taka"></a>
-
-          </div>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#" data-toggle="modal" data-target="#myModal">Sign Up/Sign In</a></li>
-            <li><a href="gallery.html">Gallery<span class="sr-only">(current)</span></a></li>
-            <li><a href="donate.html">Donate</a></li>
-          </ul>
+      <div class="navbar-header">
+        <div class="text-center">
+          <a href="index.html"><img src="img/logo.Pwz" alt="Toa Taka" height="60"></a>
         </div>
-      </nav>
-      <!-- Modal -->
-      <div id="myModal" class="container-fluid modal fade">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            </div>
-            <div class="modal-body">
-              <div class="row">
-                <div class="col-sm-1"></div>
-                <div class="col-md-4">
-                  <form class="form-horizontal">
-                    <h2 class="text-center modalHeaders">Sign Up</h2>
-                    <fieldset>
-                      <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" class="form-control inputs" id="inputName" placeholder="Name">
-                      </div>
-                      <div class="form-group">
-                        <label for="inputEmail">Email</label>
-                        <input type="text" class="form-control inputs" id="inputEmail" placeholder="Email">
-                      </div>
-                      <div class="form-group">
-                        <label for="inputPassword">Password</label>
-                        <input type="password" class="form-control inputs" id="inputPassword" placeholder="Password">
-                      </div>
-                      <button type="submit" class="btn modalBtn">Sign Up</button>
-                    </fieldset>
-                  </form>
-                </div>
+      </div>
+      <ul class="nav navbar-nav navbar-right" id="navDetails">
+        <li><a href="#" data-toggle="modal" data-target="#myModal" class="links">Sign In</a></li>
+        <li><a href="gallery.html" class="links">Gallery<span class="sr-only">(current)</span></a></li>
+        <li><a href="donate.html" class="links">Donate</a></li>
+      </ul>
+    </div>
 
-                <div class="col-sm-2"></div>
-
-                <div class="col-md-4">
-                  <form class="form-horizontal">
-                    <h2 class="text-center modalHeaders">Sign In</h2>
-                    <fieldset>
-                      <div class="form-group">
-                        <label for="inputEmail">Email</label>
-                        <input type="text" class="form-control inputs" id="inputEmail" placeholder="Email">
-                      </div>
-                      <div class="form-group">
-                        <label for="inputPassword">Password</label>
-                        <input type="password" class="form-control inputs" id="inputPassword" placeholder="Password">
-                      </div>
-                      <button type="submit" class="btn modalBtn">Sign In</button>
-                    </fieldset>
-                  </form>
-                </div>
-                <div class="col-sm-1"></div>
+    <!-- Modal -->
+    <div id="myModal" class="container-fluid modal fade">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-sm-1"></div>
+              <div class="col-md-4">
+                <form class="form-horizontal">
+                  <h2 class="text-center modalHeaders">Sign Up</h2>
+                  <fieldset>
+                    <div class="form-group">
+                      <label for="name">Name</label>
+                      <input type="text" class="form-control inputs" id="inputName" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                      <label for="inputEmail">Email</label>
+                      <input type="text" class="form-control inputs" id="inputEmail" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                      <label for="inputPassword">Password</label>
+                      <input type="password" class="form-control inputs" id="inputPassword" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn modalBtn">Sign Up</button>
+                  </fieldset>
+                </form>
               </div>
+
+              <div class="col-sm-2"></div>
+
+              <div class="col-md-4">
+                <form class="form-horizontal">
+                  <h2 class="text-center modalHeaders">Sign In</h2>
+                  <fieldset>
+                    <div class="form-group">
+                      <label for="inputEmail">Email</label>
+                      <input type="text" class="form-control inputs" id="inputEmail" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                      <label for="inputPassword">Password</label>
+                      <input type="password" class="form-control inputs" id="inputPassword" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn modalBtn">Sign In</button>
+                  </fieldset>
+                </form>
+              </div>
+              <div class="col-sm-1"></div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </header>
+  <!-- Header -->
 
   <!-- gallery -->
-  <div class="container" id="gallery">
-    <div class="row">
-
       <div class="container" id="galleryContainer">
         <div class="row">
           <div class="col-sm-4">
@@ -101,6 +113,9 @@
               <img src="images/streets.jpg" id="imageGallery" alt="My Image">
               <div class="caption">
                 <p class="text-center">Cleaning Takataka Avenue on 31st April 2016</p>
+                <div class="text-center">
+                  <button class="btn" id="viewGallery" data-toggle="modal" data-target="#theGalleries">View Gallery</button>
+                </div>
               </div>
             </div>
           </div>
@@ -109,6 +124,9 @@
               <img src="images/streets2.jpg" id="imageGallery" alt="My Image">
               <div class="caption">
                 <p class="text-center">Cleaning Takataka Avenue on 31st April 2016</p>
+                <div class="text-center">
+                  <button class="btn" id="viewGallery" data-toggle="modal" data-target="#theGalleries">View Gallery</button>
+                </div>
               </div>
             </div>
           </div>
@@ -117,6 +135,9 @@
               <img src="images/streets3.jpg" id="imageGallery" alt="My Image">
               <div class="caption">
                 <p class="text-center">Cleaning Takataka Avenue on 31st April 2016</p>
+                <div class="text-center">
+                  <button class="btn" id="viewGallery" data-toggle="modal" data-target="#theGalleries">View Gallery</button>
+                </div>
               </div>
             </div>
           </div>
@@ -128,6 +149,9 @@
               <img src="images/streets.jpg" id="imageGallery" alt="My Image">
               <div class="caption">
                 <p class="text-center">Cleaning Safi Road on 29th February 2017</p>
+                <div class="text-center">
+                  <button class="btn" id="viewGallery" data-toggle="modal" data-target="#theGalleries">View Gallery</button>
+                </div>
               </div>
             </div>
           </div>
@@ -136,6 +160,9 @@
               <img src="images/streets2.jpg" id="imageGallery" alt="My Image">
               <div class="caption">
                 <p class="text-center">Cleaning Safi Road on 29th February 2017</p>
+                <div class="text-center">
+                  <button class="btn" id="viewGallery" data-toggle="modal" data-target="#theGalleries">View Gallery</button>
+                </div>
               </div>
             </div>
           </div>
@@ -144,6 +171,9 @@
               <img src="images/streets3.jpg" id="imageGallery" alt="My Image">
               <div class="caption">
                 <p class="text-center">Cleaning Safi Road on 29th February 2017</p>
+                <div class="text-center">
+                  <button class="btn" id="viewGallery" data-toggle="modal" data-target="#theGalleries">View Gallery</button>
+                </div>
               </div>
             </div>
           </div>
@@ -155,6 +185,9 @@
               <img src="images/streets.jpg" id="imageGallery" alt="My Image">
               <div class="caption">
                 <p class="text-center">Cleaning Chafu Street on 31st June 2016</p>
+                <div class="text-center">
+                  <button class="btn" id="viewGallery" data-toggle="modal" data-target="#theGalleries">View Gallery</button>
+                </div>
               </div>
             </div>
           </div>
@@ -163,6 +196,9 @@
               <img src="images/streets2.jpg" id="imageGallery" alt="My Image">
               <div class="caption">
                 <p class="text-center">Cleaning Chafu Street on 31st June 2016</p>
+                <div class="text-center">
+                  <button class="btn" id="viewGallery" data-toggle="modal" data-target="#theGalleries">View Gallery</button>
+                </div>
               </div>
             </div>
           </div>
@@ -171,6 +207,9 @@
               <img src="images/streets3.jpg" id="imageGallery" alt="My Image">
               <div class="caption">
                 <p class="text-center">Cleaning Chafu Street on 31st June 2016</p>
+                <div class="text-center">
+                  <button class="btn" id="viewGallery" data-toggle="modal" data-target="#theGalleries">View Gallery</button>
+                </div>
               </div>
             </div>
           </div>
@@ -178,54 +217,109 @@
       </div>
       <!-- gallery -->
 
-      <!-- footer -->
-      <div class="container-fluid navbar-bottom" id="footer">
-        <div class="row">
-          <div class="col-sm-4">
-            <h1 class="text-center" id="footerHeader">Toa Taka</h1>
-            <br>
-            <div class="text-center">
-              <img src="images/logo.png">
+      <!-- Carousel with gallery pictures -->
+      <div id="theGalleries" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
-          </div>
-          <div class="col-sm-8">
-            <div class="row moreInfo">
-              <div class="col-sm-4"></div>
-              <div class="col-sm-4">
-                <ul class="extra">
-                  <li><a href="index.html" class="links">Home</a></li>
-                  <li><a href="about-us.html" class="links">About Us</a></li>
-                  <li><a href="team.html" class="links">Our Team</a></li>
-                  <li><a href="gallery.html" class="links">Gallery</a></li>
-                  <li><a href="about-us.html" class="links">Contact Us</a></li>
-                  <li><a href="donate.html" class="links">Donate</a></li>
-                </ul>
+            <div class="modal-body">
+              <div class="w3-content" style="max-width:800px;">
+                <img class="mySlides" src="images/1.jpg" style="width:100%">
+                <img class="mySlides" src="images/2.jpg" style="width:100%">
+                <img class="mySlides" src="images/3.jpg" style="width:100%">
+                <img class="mySlides" src="images/4.jpg" style="width:100%">
+                <br>
               </div>
-              <div class="col-sm-4">
-                <ul class="extra">
-                  <li><a href="#" class="links">Our Apps</a></li>
-                  <li><a href="#" class="links">Careers</a></li>
-                  <li><a href="#" class="links">FAQ</a></li>
-                  <li><a href="#" class="links">Terms and Conditions</a></li>
-                  <li><a href="#" class="links">Our Partners</a></li>
-                  <li><a href="#" class="links">Privacy</a></li>
-                </ul>
+              <div class="w3-center">
+                <div class="w3-section text-center">
+                  <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
+                  <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+                </div>
               </div>
             </div>
+            <div class="modal-footer"></div>
           </div>
-        </div>
-        <div class="row">
-          <br>
-          <br>
-          <p class="text-center" id="copy">&#169 2017 Toa Taka. All Rights Reserved.</p>
         </div>
       </div>
-      <!-- footer -->
+      <!-- Carousel with gallery pictures -->
+
+  <!-- footer -->
+  <div class="container-fluid navbar-bottom" id="footer">
+    <div class="row">
+      <div class="col-sm-4">
+        <h1 class="text-center" id="footerHeader">Toa Taka</h1>
+        <br>
+        <div class="text-center">
+          <img src="images/logo.png">
+        </div>
+      </div>
+      <div class="col-sm-8">
+        <div class="row moreInfo">
+          <div class="col-sm-4"></div>
+          <div class="col-sm-4">
+            <ul class="extra">
+              <li><a href="#" class="links">Home</a></li>
+              <li><a href="about-us.html" class="links">About Us</a></li>
+              <li><a href="team.html" class="links">Our Team</a></li>
+              <li><a href="gallery.html" class="links">Gallery</a></li>
+              <li><a href="about-us.html" class="links">Contact Us</a></li>
+              <li><a href="#" class="links">Donate</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <ul class="extra">
+              <li><a href="#" class="links">Our Apps</a></li>
+              <li><a href="#" class="links">Careers</a></li>
+              <li><a href="faq.html" class="links">FAQ</a></li>
+              <li><a href="#" class="links">Terms and Conditions</a></li>
+              <li><a href="#" class="links">Our Partners</a></li>
+              <li><a href="#" class="links">Privacy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <br>
+      <br>
+      <p class="text-center" id="copy">&#169 2017 Toa Taka. All Rights Reserved.</p>
+    </div>
+  </div>
+  <!-- footer -->
 <!--if you need scripts put them here-->
 <script src="js/jquery-3.2.1.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/scripts.js"></script>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
 
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-red";
+}
+</script>
 </body>
 
 </html>
