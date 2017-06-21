@@ -7,6 +7,10 @@ body {
   border-radius: 50%;
 }
 
+.blog-align-right {
+  text-align: right;
+}
+
 /* General */
 
 html, body {
