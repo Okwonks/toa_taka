@@ -9,6 +9,16 @@ body {
 
 .blog-align-right {
   text-align: right;
+  font-style: italic;
+  font-family: 'Lobster',cursive;
+  font-size: 1.2em;
+}
+
+/*---blog.html page---*/
+#container-blog {
+  font-size: 1.15em;
+  font-family: 'Bitter',serif;
+  font-family: 'Spectral',serif;
 }
 
 /* General */
