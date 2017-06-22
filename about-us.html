@@ -11,27 +11,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>About Us</title>
     <link rel="apple-touch-icon" sizes="57x57" href="img/icons/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="img/icons/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="img/icons/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="img/icons/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="img/icons/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="img/icons/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="img/icons/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
-  <link rel="manifest" href="img/icons/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="img/icons/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+    <link rel="manifest" href="img/icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <style>
-    /*About section CSS*/
 
-    body {
-      background-color: #CCC
+    #fname, #lname, #email {
+    	height: 50px;
+    }
+
+    #fname, #lname, #email, #comments {
+    	width: 100%;
+    	font-size: 1.2em;
+    }
+
+    #comments {
+    	height: 100%;
     }
 
     #map-outer {
@@ -42,8 +50,53 @@
       background-color: #FFF
     }
 
+    .hvr-overline-from-left {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px transparent;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .hvr-overline-from-left:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 100%;
+        top: 0;
+        background-color: #ffffff;
+        height: 4px;
+        -webkit-transition-property: right;
+        transition-property: right;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+
+    .hvr-overline-from-left:hover:before, .hvr-overline-from-left:focus:before, .hvr-overline-from-left:active:before {
+        right: 0;
+    }
+
+    #contactSubmit {
+    	height: 45px;
+    	background-color: #e85709;
+    	border-color: #e85709;
+    	width: 100%;
+    	color: #ffffff;
+    	border-radius: 0px;
+    }
+
+    #contactSubmit:hover {
+
+    }
+
     #map-container {
       height: 500px
+      width: 100%;
     }
 
     @media all and (max-width: 991px) {
@@ -147,6 +200,20 @@
     #copy {
     	color: #dbdbdb;
     }
+
+    #about {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #ffffff;
+        opacity: 0.7;
+        padding-left: 40px;
+        padding-right: 40px;
+        border-radius: 10px;
+        padding-bottom: 40px;
+        font-weight: 900;
+    }
     /* Footer */
 
     </style>
@@ -165,6 +232,8 @@
         <li><a href="#" data-toggle="modal" data-target="#myModal" class="links">Sign In</a></li>
         <li><a href="gallery.html" class="links">Gallery<span class="sr-only">(current)</span></a></li>
         <li><a href="donate.html" class="links">Donate</a></li>
+        <li><a href="about-us.html" class="links">About Us</a></li>
+        <li><a href="blog.html" class="links">Blog</a></li>
       </ul>
     </div>
 
@@ -226,136 +295,128 @@
   </header>
   <!-- Header -->
 
-  <!-- About Us -->
   <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-4"></div>
-      <div class="col-sm-4">
-        <br>
-        <br>
-        <h1 class="text-center">ABOUT US</h1>
-        <br>
-        <h4 class="text-center">Overview</h4>
-      </div>
-      <div class="col-sm-4"></div>
-    </div>
+  	<div class="row">
+  	    <div style="position: relative;">
+  	    	<img src="img/nairobi.jpg" class="img-responsive" width="100%;" height="400px;" id="aboutUsContainer">
+  	    	<div id="about">
+  	    	    <h1 class="text-center" style="font-family: 'Open Sans', sans-serif;">ABOUT US</h1>
+  	    	    <h4 class="text-center">OVERVIEW</h4>
+  	    	    <p>
+                Major cities and towns in the country have  a major litter problem, it is dumped in undesignated places.
+                This becomes an eyesore and even worse provides breeding grounds for pests and parasites that cause diseases. Out of this,
+                Toa Taka was birthed. It is a crowd-funding platform that allows users to donate to a site for cleaning.
+                </p>
+                <br>
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
+                	<ul class="list-with-checks fa-ul mb0">
+                        <li><i class="fa-li fa fa-check"></i>Mobile-Friendly Campaigns</li>
+                        <li><i class="fa-li fa fa-check"></i>No penalties for missing goal</li>
+                        <li><i class="fa-li fa fa-check"></i>Toa taka Mobile App</li>
+                    </ul>
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
 
-    <div class="row">
-      <div class="col-sm-3"></div>
-      <div class="col-sm-6">
-        <p>
-          Major cities and towns in the country have  a major litter problem, it is dumped in undesignated places.
-          This becomes an eyesore and even worse provides breeding grounds for pests and parasites that cause diseases. Out of this,
-          Toa Taka was birthed. It is a crowd-funding platform that allows users to donate to a site for cleaning.
-        </p>
-      </div>
-      <div class="col-sm-3"></div>
-    </div>
+  	    </div>
+  	</div>
+  </div>
 
-    <div class="row">
-      <br>
-      <h3 class="text-center">KEY POINTS</h3>
-      <br>
-      <div class="col-sm-5"></div>
-      <div class="col-sm-2">
-        <div class="overview">
-          <ul class="list-with-checks fa-ul mb0">
-            <li><i class="fa-li fa fa-check"></i>Mobile-Friendly Campaigns</li>
-            <li><i class="fa-li fa fa-check"></i>No penalties for missing goal</li>
-            <li><i class="fa-li fa fa-check"></i>Toa taka Mobile App</li>
-          </ul>
+  <div class="container-fluid" style="padding-top: 50px; padding-bottom: 30px;">
+  	<div class="row">
+  		<div class="col-md-4">
+  			<div class="text-center">
+                <a><i class="fa fa-trophy fa-4x" style="color: #e85709;" aria-hidden="true"></i></a>
+            </div>
+            <h3 class="text-center" style="font-family: 'Open Sans', sans-serif;"><strong>#1 FUNDRAISING PLATFORM</stong></h3>
+            <p class="text-center">People have raised alot of money for enviromental causes.</p>
+  		</div>
+  		<div class="col-md-4">
+  			<div class="text-center">
+                <a href=""><i class="fa fa-lock fa-4x" style="color: #e85709;" aria-hidden="true"></i></a>
+            </div>
+            <h3 class="text-center" style="font-family: 'Open Sans', sans-serif;"><strong>TOA TAKA GUARANTEE</stong></h3>
+            <p class="text-center">Your donation is safe. If anything is not right we will give you a <strong>full</strong> refund.</p>
+  		 </div>
+  		<div class="col-md-4">
+  			<div class="text-center">
+                <a href=""><i class="fa fa-clock-o fa-4x" style="color: #e85709;" aria-hidden="true"></i></a>
+            </div>
+            <h3 class="text-center" style="font-family: 'Open Sans', sans-serif;"><strong>TIMELY SUPPORT</stong></h3>
+            <p class="text-center">Contact us with your questions and comments and we will reply in minutes..</p>
+  		</div>
+  	</div>
+  </div>
+
+  <div class="container-fluid">
+  	<div class="row">
+  		<div id="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15955.167680788112!2d36.787326!3d-1.29965695!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x940b62a3c8efde4c!2sMoringa+School!5e0!3m2!1sen!2ske!4v1497863417684" height="450" frameborder="0" style="border:0; width: 100%;" allowfullscreen></iframe>
         </div>
-        <br>
-        <br>
-      </div>
-      <div class="col-sm-5"></div>
-    </div>
+  	</div>
   </div>
 
-  <div class="container">
-    <div class="well">
-    <div class="row">
-    <div class="col-md-4">
-      <div class="text-center">
-        <a><i class="fa fa-trophy fa-4x" aria-hidden="true"></i></a>
-      </div>
-      <h3 class="text-center">#1 Fundraising Platform</h3>
-      <P>People have raised alot of money for enviromental causes.</P>
-    </div>
-    <div class="col-md-4">
-      <div class="text-center">
-        <a href=""><i class="fa fa-lock fa-4x" aria-hidden="true"></i></a>
-      </div>
-      <h3 class="text-center">Toa Taka Guarantee</h3>
-      <P>Your donation is safe. If anything is not right we will give you a <strong>full</strong> refund.</P>
-    </div>
-    <div class="col-md-4">
-      <div class="text-center">
-        <a href=""><i class="fa fa-clock-o fa-4x" aria-hidden="true"></i></a>
-      </div>
-      <h3 class="text-center">Timely Support</h3>
-      <p>Contact us with your questions and comments and we will reply in minutes..</p>
-    </div>
-    </div>
-    </div>
+  <div class="container-fluid">
+  	<div class="row" style="padding-top: 35px; padding-bottom: 50px;">
+  		<div class="col-sm-8">
+  		<h2 class="text-center" style="font-family: 'Open Sans', sans-serif;">CONTACT US</h2>
+  		    <form>
+  			<div class="row">
+  				<div class="col-sm-7">
+  					<div class="form-group">
+                        <input type="fname" class="form-control" id="fname" placeholder="First Name">
+  					</div>
+  					<div class="form-group">
+                        <input type="lname" class="form-control" id="lname" placeholder="Last Name">
+  					</div>
+                        <input type="email" class="form-control" id="email" placeholder="Email Address">
+  				</div>
+  				<div class="col-sm-5">
+  					<div class="form-group">
+                        <textarea class="form-control" rows="5" id="comment" placeholder="Enter Your Message"></textarea>
+                        <br>
+                        <button class="btn hvr-overline-from-left" id="contactSubmit">SEND MESSAGE</button>
+                    </div>
+  				</div>
+  			</div>
+  			</form>
+  		</div>
+  		<div class="col-sm-4">
+  			<h2 style="font-family: 'Open Sans', sans-serif;">OUR LOCATION</h2>
+  			<address>
+  			    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
+  				<strong>Ngong Lane Plaza</strong>
+  				<br>
+  				First Floor,<br>
+  				Ngong Road<br>
+  				Nairobi<br>
+  				Kenya<br>
+  				<i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
+  				Phone: +00 151515<br>
+  				<i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
+  				Email: info@toataka.com<br>
+  				<p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave us a note:</p>
+  				<br>
+  			</address>
+  		</div>
+  	</div>
+
+  	<div class="row">
+  		<div class="col-sm-4"></div>
+  		<div class="col-sm-4">
+  			<h3 class="text-center" style="font-family: 'Open Sans', sans-serif;">Give Us A Follow:</h3>
+  			<p class="text-center">
+  				<i class="fa fa-instagram fa-4x" aria-hidden="true" style="color: brown;"></i>
+  				&nbsp;&nbsp;&nbsp;&nbsp;
+  				<i class="fa fa-facebook fa-4x" aria-hidden="true" style="color: blue;"></i>
+  				&nbsp;&nbsp;&nbsp;&nbsp;
+  				<i class="fa fa-twitter fa-4x" aria-hidden="true" style="color: green;"></i>
+  			</p>
+  		</div>
+  		<div class="col-sm-4"></div>
+  	</div>
   </div>
-  <!--/well-->
-
-  <div class="container">
-   <div class="row" id="mapContainer">
-       <div id="map-outer" class="col-md-12">
-           <div id="address" class="col-md-4">
-             <h2>Our Location</h2>
-             <address>
-             <strong>Ngong Lane Plaza</strong><br>
-                First Floor,<br>
-                 Ngong Road<br>
-                 Nairobi<br>
-                 Kenya<br>
-                 <abbr>P:</abbr> 254 711 581 484<br><br>
-                 <div class="col-md-6">
-                    <a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i><br>
-                    <a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i><br>
-                    <a href="#"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a><br>
-                 </div>
-           </div>
-
-         <div id="map-container" class="col-md-8">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15955.167680788112!2d36.787326!3d-1.29965695!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x940b62a3c8efde4c!2sMoringa+School!5e0!3m2!1sen!2ske!4v1497863417684" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-         </div>
-       </div><!-- /map-outer -->
-
-   </div> <!-- /row -->
-<div class="page-header">
-  <h2 class="text-center">Contact Us</h2>
-</div>
-   <div class="row">
-   <form class="form-horizontal" name="commentform">
-     <div class="form-group">
-         <div class="col-md-4">
-             <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name"/>
-         </div>
-         <div class="col-md-4">
-             <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name"/>
-         </div>
-         <div class="col-md-4 input-group">
-         <span class="input-group-addon">@</span>
-             <input type="email" class="form-control" id="email" name="email" placeholder="Email Address"/>
-         </div>
-     </div>
-     <div class="form-group">
-         <div class="col-md-12">
-             <textarea rows="6" class="form-control" id="comments" name="comments" placeholder="Your question or comment here"></textarea>
-         </div>
-     </div>
-     <div class="form-group">
-         <div class="col-md-6">
-             <button type="submit" value="Submit" class="btn btn-warning pull-right">Send</button>
-         </div>
-     </div>
-  </form>
-  </div><!-- /row -->
-  </div><!-- /container -->
 
   <!-- footer -->
     <div class="container-fluid navbar-bottom" id="footer">
