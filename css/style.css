@@ -210,8 +210,8 @@ button {
   text-decoration: none;
 }
 
-.links:hover {
-  color: #1a9b1c;
+#navDetails a:hover {
+  color: white;
   text-decoration: none;
 }
 
