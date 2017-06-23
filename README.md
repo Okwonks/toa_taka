@@ -1,8 +1,8 @@
 # Toa Taka | Clean Country
 
 #### Contributors
-  This project was completed by Leroy Omondi, Tessa McDuffie, David Kahara,
-Morris Waracci, Albert Oketch, and Gitu Mbugua.
+  This project was completed by [Leroy Omondi](https://github.com/leroy2712), [Tessa McDuffie](https://github.com/tessamac2205), [David Kahara](https://github.com/d-kahara),
+[Morris Waracci](https://github.com/waracci), [Albert Oketch](https://github.com/Okwonks), and [Gitu Mbugua](https://github.com/gitumbugua).
 
 #### Description
   This project is a website featuring environmental cleaning projects, especially
