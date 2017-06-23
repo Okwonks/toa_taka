@@ -15,9 +15,9 @@ from the surrounding neighbourhoods and communities.
 
 #### Contact Information
   You can contact us on any of the following:
-    * toatakacleancounty@gmail.com
-    * https://twitter.com/toa_taka for Twitter
-    * https://www.facebook.com/toataka/ for Facebook
+    * [Mail](toatakacleancounty@gmail.com)
+    * [Twitter](https://twitter.com/toa_taka)
+    * [Facebook](https://www.facebook.com/toataka/)
 
 #### Support or Contribution Instructions
   If you would like to support us and contribute to our projects, visit https://toataka.tk
